@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario 1</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="hmtl5,css,javascript,desarrollo web">
+        <meta name="author" content="Alexander Sánchez Liau">
+        <link rel="shortcut icon" href="../img/aro.jfif" type="image/x-icon">
+        <!--Para los estilos css-->
+        <link rel="stylesheet" href="/CSS/ejmplo.css">
+        <style>
+            body {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .container {
+                display: flex;
+            }
+            .section {
+                border: 1px solid #000;
+                padding: 10px;
+                margin: 10px;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center; color: crimson;">Registro_Personal</h2>
+        <form action="/sumit-form" method="post" style="margin: 10px;"></form>
+        <fieldset>
+            <legend>Informacion Personal:</legend>
+            <label for="nombre"><i class="fa-solid fa-fish"></i> Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="">
+            <br><br>
+
+            <label for="apellido"><i class="fa-solid fa-fish"></i> Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="">
+            <br><br>
+
+            <label for="fecha"><i class="fa-solid fa-calendar-days"></i> FechaRegistro: </label>
+            <input type="date" id="fecha" name="fecha" placeholder="">
+            <br><br>
+
+            <p>Género:</p>
+            <input type="radio" name="opcion1" id="opcion1" value="Opcion1" checked>
+            <label for="opcion1"><i class="fa-solid fa-check"></i> Masculino:</label>
+            <br>
+            <input type="radio" name="opcion1" id="opcion1" value="Opcion1">
+            <label for="opcion1"><i class="fa-solid fa-check"></i> Femenino:</label>
+            <br>
+            <input type="radio" name="opcion1" id="opcion1" value="Opcion1">
+            <label for="opcion1"><i class="fa-solid fa-check"></i> Otro:</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Informacion De Contacto:</legend>
+            <label for="correo"><i class="fa-solid fa-umbrella"></i> Correo Eletronico: </label>
+            <input type="email" id="correo" name="correo" placeholder="usuario@dominio.com" required>
+            <br><br>
+
+            <label for="telefono"><i class="fa-solid fa-fish"></i> Número de Teléfono: </label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Telefono">
+            <br><br>
+
+            <label for="observacion"><i class="fa-solid fa-umbrella"></i> Dirección: </label><br>
+            <textarea name="observacion" id="observacion" rows="4" cols="40" placeholder="Dirección"></textarea>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Informacion De Cuenta:</legend>
+
+            <label for="nombre"><i class="fa-solid fa-fish"></i> Nombre de Usuario: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="">
+            <br><br>
+
+            <label for="password"><i class="fa-solid fa-umbrella"></i> Contraseña: </label>
+            <input type="password" id="password" name="password" required minlength="6" maxlength="15">
+            <br><br>
+            <label for="password"><i class="fa-solid fa-umbrella"></i> Confirmar Contraseña: </label>
+            <input type="password" id="password" name="password" required minlength="6" maxlength="15">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias:</legend>
+
+            <label for="">Seleccionar un Color Favorito: </label><input type="color"><br><br>
+
+            <input type="checkbox" name="suscripcion" id="suscripcion" value="Aceptado">
+            <label for="suscripcion"><i class="fa-solid fa-check"></i> Acepta los Términos y Condiciones:</label>
+            <br><br>
+        </fieldset>
+            <input type="submit" name="" id=""  value="Registrarse">
+        
+
+        
+
+
+
+
+
+
+
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>

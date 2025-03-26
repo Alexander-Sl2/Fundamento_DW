@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Los Pollos Hermanos</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="hmtl5,css,javascript,desarrollo web">
+        <meta name="author" content="Alexander Sánchez Liau">
+        <link rel="shortcut icon" href="../img/aro.jfif" type="image/x-icon">
+        <!--Para los estilos css-->
+        <link rel="stylesheet" href="/CSS/ejmplo.css">
+    </head>
+    <body>
+        <h1 style="color: crimson; text-align: center;">TEMA: TABLA EN HTML5</h1>
+        <P style=text-align:center>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ea quam quos necessitatibus! Nisi ad accusamus nihil voluptates fugiat debitis placeat, optio minima natus sunt, perspiciatis perferendis, culpa explicabo sed!</P>
+        <table border="2px" style="width:100%; border-color: rgb(138, 231, 231); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-style: dashed;">
+           <tr style="background-color: cornflowerblue; color: crimson;"><!--Para los encabezados-->
+           <th>Enacabezado 1</th>
+           <th>Enacabezado 2</th>
+           <th>Enacabezado 3</th>
+           <th>Enacabezado 4</th>
+           </tr>
+
+           <tr style="color: darkgray;"><!--Para la fila 1-->
+           <td>Fila 1,Celda 1</td>
+           <td>Fila 2,Celda 2</td>
+           <td>Fila 3,Celda 3</td>
+           <td>Fila 4,Celda 4</td>
+           </tr>
+
+           <tr style="color: darkgray;"><!--Para la fila 2-->
+            <td>Fila 2,Celda 2</td>
+            <td>Fila 2,Celda 2</td>
+            <td>Fila 2,Celda 3</td>
+            <td>Fila 2,Celda 4</td>
+           </tr>
+
+        </table>
+        <!--Agrupacion de celdas-->
+        <h2 style="color: crimson; text-align: center;">Agrupacion de celdas</h2>
+        <table border="1.5px" style="width:100%; border-color: rgb(25, 136, 136); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border-style: dashed;">
+            <tr style="background-color: rgb(147, 168, 207); color: crimson;"><!--Para los encabezados-->
+            <th>Enacabezado 1</th>
+            <th>Enacabezado 2</th>
+            <th>Enacabezado 3</th>
+            <th>Enacabezado 4</th>
+            </tr>
+ 
+            <tr style="color: darkgray;"><!--Para la fila 1-->
+            <td rowspan="2">Campo 1</td>
+            <td>Campo 2</td>
+            <td>Campo 3</td>
+            <td>Campo 4</td>
+            </tr>
+
+            <tr style="color: darkgray;"><!--Para la fila 2-->
+                <td colspan="2">Campo 6</td>
+                <td>Campo 8</td>
+            </tr>
+
+            <tr style="color: darkgray;">
+                <td>Campo 10</td>
+                <td>Campo 11</td>
+                <td colspan="2" rowspan="2">Campo 12</td>
+            </tr>
+
+            <tr style="color: darkgray;">
+                <td>Campo 13</td>
+                <td>Campo 14</td>
+            </tr>
+         </table>
+
+         <!--Tabla con encabezado, cuerpo y pie de página-->
+         <h2 style="color: crimson; text-align: center;">Tablacon encabezado, cuerpo y pie de página</h2>
+         <table border="2px" style="width: 100%; color: crimson;">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody style="color: darkgray;">
+                <tr>
+                    <td>Zapatos
+                    <td>$50</td>
+                    <td>2</td>
+                </tr>
+                
+                <tr>
+                    <td>Camisas</td>
+                    <td>$30</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>Pantalones</td>
+                    <td>$40</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <tfoot style="color: darkblue;">
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>6</td>
+                </tr>
+            </tfoot>
+         </table>
+
+         <!--Tabla con celdas fusionadas-->
+         <h2 style="color: crimson; text-align: center;">Tablas con celdas fusioandas</h2>
+         <table border="2px" style="width: 100%;">
+            <thead style="color: crimson;">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Información de contactos</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody style="color: darkgray;">
+                <tr>
+                    <td rowspan="2">Ana</td>
+                    <td>Email: ana@gmail.com <br>Telefono : 123456789</td>
+                    <td>Edad: 20 <br> Ciudad: Madrid</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Comentarios: Cliente Regular</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Carlos</td>
+                    <td>Email: Carlos@gmail.com <br>Telefono : 123456789</td>
+                    <td>Edad: 30 <br> Ciudad: Barcelona</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Comentarios: Cliente Frecuente</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Gustavo</td>
+                    <td>Email: Gustavo@gmail.com <br>Telefono : 123456789</td>
+                    <td>Edad: 38 <br> Ciudad: Santiago de Chile</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Comentarios: Dueño de "Los pollos hermanos"</td>
+                </tr>
+            </tbody>
+         </table>
+        
+
+
+
+
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>

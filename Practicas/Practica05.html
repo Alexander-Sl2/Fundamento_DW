@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input, select, textarea {
+            margin-top: 5px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .genero, .aficiones {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            padding: 5px;
+        }
+
+        .terminos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .terminos a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Ajuste responsive */
+        @media (max-width: 450px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <form action="#" method="post">
+            
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" value="Juan Pérez" readonly>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" disabled>
+
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" value="232342">
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label>Género:</label>
+            <div class="genero">
+                <input type="radio" id="masculino" name="genero" value="Masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="femenino" name="genero" value="Femenino" checked>
+                <label for="femenino">Femenino</label>
+
+                <input type="radio" id="otro" name="genero" value="Otro">
+                <label for="otro">Otro</label>
+            </div>
+
+            <label>Aficiones:</label>
+            <div class="aficiones">
+                <input type="checkbox" id="deporte" name="aficiones" value="Deporte" checked>
+                <label for="deporte">Deporte</label>
+
+                <input type="checkbox" id="musica" name="aficiones" value="Música">
+                <label for="musica">Música</label>
+
+                <input type="checkbox" id="lectura" name="aficiones" value="Lectura">
+                <label for="lectura">Lectura</label>
+            </div>
+
+            <label for="pais">País de residencia:</label>
+            <select id="pais" name="pais">
+                <option value="España">España</option>
+                <option value="México">México</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <div class="terminos">
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos">Acepto los <a href="#">términos y condiciones</a>.</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>

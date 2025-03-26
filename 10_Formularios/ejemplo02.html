@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Propiedades de los Formularios</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="hmtl5,css,javascript,desarrollo web">
+        <meta name="author" content="Alexander Sánchez Liau">
+        <link rel="shortcut icon" href="../img/aro.jfif" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/c0563a11ca.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--Para los estilos css-->
+        <link rel="stylesheet" href="/CSS/ejmplo.css">
+    </head>
+    <body>
+        <!--1. Etiqueta form-->
+        <form action="/sumit-form" method="post" style="margin: 10px;">
+            <!--Los campos-->
+            <!--2. Etiqueta label-->
+            <label for="nombre"><i class="fa-solid fa-umbrella"></i> Nombres: </label>
+            <!--3. Input-->
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+            <br><br>
+
+            <label for="telefono"><i class="fa-solid fa-fish"></i> Telefono: </label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Telefono">
+            <br><br>
+
+            <label for="dni"><i class="fa-solid fa-ghost"></i></i> Dni: </label>
+            <input type="number" id="dni" name="dni" placeholder="dni">
+            <br><br>
+
+            <label for="fecha"><i class="fa-solid fa-calendar-days"></i> FechaRegistro: </label>
+            <input type="date" id="fecha" name="fecha" placeholder="">
+            <br><br>
+
+            <!--4. Textarea-->
+            <label for="observacion"><i class="fa-brands fa-apple"></i> Observaciones: </label><br>
+            <textarea name="observacion" id="observacion" rows="2" cols="" placeholder="Observaciones"></textarea>
+
+            <!--5. Select-->
+            <br><br>
+            <label for="pais"><i class="fa-solid fa-globe"></i> Seleccione el Pais:</label>
+            <select name="pais" id="pais">
+                <option value="">Mexico</option>
+                <option value="">Argentina</option>
+                <option value="">Colombia</option>
+                <option value="">Salvador</option>
+                <option value="">Ecuador</option>
+            </select>
+
+            <br><br>
+            <label for="cargo"><i class="fa-solid fa-spaghetti-monster-flying"></i> Seleccione el Cargo:</label>
+            <select name="cargo" id="cargo">
+                <option value="">Gerente</option>
+                <option value="">SubGerente</option>
+                <option value="">Jefe de sistemas</option>
+                <option value="">Tecnico</option>
+                <option value="">Administrador</option>
+            </select>
+
+            <!--6. Button-->
+            <br><br>
+            <button type="button" class="btn btn-dark">Dark</button>
+
+            <!--7. Fieldset y legend-->
+            <fieldset>
+                <legend>Dirección:</legend>
+                <label for="direccion"><i class="fa-solid fa-location-pin"></i> Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="direccion">
+                <br><br>
+                <label for="otros"><i class="fa-solid fa-cloud-sun"></i> Otros:</label>
+                <input type="text" id="otros" name="otros" placeholder="Otros">
+            </fieldset>
+            <br><br><hr>
+            <!--8. Checbox-->
+            <input type="checkbox" name="suscripcion" id="suscripcion" value="Aceptado">
+            <label for="suscripcion"><i class="fa-solid fa-check"></i> Suscribirse a nustro boletin:</label>
+            <br><br>
+            <input type="checkbox" name="suscripcion2" id="suscripcion2" value="No aceptar">
+            <label for="suscripcion2"><i class="fa-solid fa-check"></i> Otros:</label>
+            <br><br><hr>
+
+            <!--9. Radio-->
+            <input type="radio" name="opcion1" id="opcion1" value="Opcion1">
+            <label for="opcion1"><i class="fa-solid fa-check"></i> Opcion1:</label>
+            <br><br>
+            <input type="radio" name="opcion2" id="opcion2" value="Opcion2">
+            <label for="opcion2"><i class="fa-solid fa-check"></i> Opcion2:</label>
+            <br><br><hr>
+
+            <!--10. Submit-->
+            <input type="submit" name="" id=""  value="Enviar formulario">
+       
+
+        </form>
+        
+
+
+
+
+        <script src="/javascript/ejemplo.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
