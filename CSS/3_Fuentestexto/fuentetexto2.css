@@ -1,0 +1,40 @@
+/*Elabora una presentacion, que tenga un h2 como titulo
+ y 3 etiquetas de tipo p para los parrafos, asigna los
+ selectores de tipo clase*/
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*Fuentes de texto*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #f0f0f0;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+    padding: 20px;
+}
+.clase1{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: red 5px dotted;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+}
+.titulo1{
+    text-align: center;
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    color: crimson;
+    /*Border*/
+    border-color: crimson darkgray darkcyan;
+    border-width: 5px;
+    border-style: solid;
+}
+
+
+
