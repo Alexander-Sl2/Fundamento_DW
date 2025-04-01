@@ -1,0 +1,56 @@
+/*Estilos Generales*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*Centrar los elementos en fila*/
+    align-items: center; /*Centra los elementos en los dos ejes*/
+    height: 100vh;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box1{
+    background-color: red; /*Nombre del color*/
+}
+
+.box2{
+    background-color: green; /*Hexadecimal (verde)*/
+}
+
+.box3{
+    background-color: blue; /*rgb (azul)*/
+}
+
+.box4{
+    background-color: rgba(199, 0, 0, 0.5); /*RGBA (rojo semi-transparente)*/
+}
+
+.box5{
+    background-color: hsl(240,100%,50%); /*HSL (azul)*/
+}
+
+.box6{
+    background-color: hsl(120,100%,50%,0.7); /*HSLA (verde semi-transparente)*/
+}

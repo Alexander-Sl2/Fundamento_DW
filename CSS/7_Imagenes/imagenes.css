@@ -1,0 +1,40 @@
+/*Tamaños y dimensiones*/
+img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+/*Posicionamiento*/
+img{
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+/*Alineacion*/
+.container{
+    text-align: center;
+}
+img{
+    vertical-align: middle;
+}
+
+/*Borders*/
+img{
+    border: 2px solid crimson;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 5px;
+}
+
+/*Otras propiedades*/
+img{
+    display: inline;
+    overflow: scroll;
+   
+}
+
