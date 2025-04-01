@@ -35,6 +35,20 @@ body{
     border-width: 5px;
     border-style: solid;
 }
+.content1{
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: rgb(49, 49, 212);
+}
+.titulo1:hover{
+    background-color: blue;
+    text-transform: lowercase;
+
+}
+.clase1:hover{
+    background-color: rgb(146, 236, 236);
+}
 
 
 
