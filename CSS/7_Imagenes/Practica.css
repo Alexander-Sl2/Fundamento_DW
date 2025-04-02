@@ -11,9 +11,9 @@ body{
     height: 100vh;
     display: flex;
     /*Para centrar la pagina con el contenido*/
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .container{
     background-color: rgba(255,255,255,0.8);
@@ -31,7 +31,7 @@ h1{
 }
 
 .container2{
-    background-color: rgba(17, 15, 15, 0.8);
+    background-color: rgba(214, 202, 202, 0.8);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
