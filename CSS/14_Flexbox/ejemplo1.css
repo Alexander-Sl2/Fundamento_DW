@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.item{
+    background-color: lightgreen;
+    padding: 20px;
+    
+}

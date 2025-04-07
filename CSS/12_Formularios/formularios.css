@@ -15,6 +15,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
 }
 
 /*Estilos del formulario*/
@@ -32,6 +39,7 @@ h2{
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    
 }
 
 /*Estilos para los campos*/
