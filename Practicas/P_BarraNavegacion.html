@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brra de Navegacion</title>
+        <meta name="description" content="sistema de ventas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="hmtl5,css,javascript,desarrollo web">
+        <meta name="author" content="Alexander Sánchez Liau">
+        <link rel="shortcut icon" href="../img/aro.jfif" type="image/x-icon">
+        <!--Para los estilos css-->
+        <link rel="stylesheet" href="./P_BarraNavegacion.css">
+        <script src="https://kit.fontawesome.com/c0563a11ca.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header -->
+    <header>
+        <h1>Una Pagina Web</h1>
+        <p>Nada mas que decir...</p>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <div class="navbar" id="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&rip=1&nojavascript=1&lp=1&hl=es" target="_blank"><i class="fas fa-home"></i>Inicio</a>
+        <a href="./P_Transformaciones.html" target="_blank"><i class="fa-solid fa-folder-open"></i></i>Tarea</a>
+        <a href="./P_WebSemantica.html" target="_blank"><i class="fas fa-cogs"></i>Soporte Tecnico</a>
+        
+       
+
+        <a href="https://contacts.google.com/" target="_blank"><i class="fas fa-phone-alt"></i>Contacto</a>
+    </div>
+
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+    </script>
+        
+        <script src="/javascript/ejemplo.js" async defer></script>
+    </body>
+</html>
