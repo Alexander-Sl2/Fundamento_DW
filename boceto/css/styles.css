@@ -1,0 +1,24 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff9f00; /* Color destacado para la página activa */
+}
