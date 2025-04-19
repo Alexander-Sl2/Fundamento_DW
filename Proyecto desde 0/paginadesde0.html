@@ -40,6 +40,15 @@
         main {
             flex: 1;
         }
+
+        /* Imágenes uniformes sin recorte y mostrando la totalidad */
+        .card-img-top {
+            width: 100%;           /* ocupa ancho del card */
+            height: 200px;         /* altura fija */
+            object-fit: contain;   /* muestra toda la imagen */
+            background-color: #fcfcfc; /* fondo neutro para relleno */
+        }
+
     </style>
 </head>
 <body>
@@ -64,7 +73,7 @@
                 </form>
 
                 <div class="text-end">
-                    <a href="./loginregister2.html" class="btn btn-outline-light me-2">Iniciar Sesion</a>
+                    <a href="./iniciosesion.html" class="btn btn-outline-light me-2">Iniciar Sesion</a>
                 </div>
             </div>
         </div>
@@ -84,151 +93,110 @@
             </div>
           </section>
         
-          <div class="album py-5 bg-body-tertiary">
-            <div class="container">
-        
+          <!-- Album con productos -->
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!-- Card: Tarjeta Gráfica (con descuento) -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://static.gigabyte.com/StaticFile/Image/Global/1f7a4b7372688a9959a997aa486252e1/Product/25956/Png" class="card-img-top" alt="Tarjeta Gráfica">
+                      <div class="card-body">
+                        <h5 class="card-title">NVIDIA GeForce RTX 3080</h5>
+                        <p class="card-text">Potente tarjeta gráfica para gaming de alta gama.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-muted text-decoration-line-through">$799</small>
+                            <span class="fw-bold ms-1">$699</span>
+                            <span class="badge bg-danger ms-2">-12%</span>
+                          </div>
+                          <button type="button" class="btn btn-sm btn-outline-primary">Comprar</button>
                         </div>
-                        <small class="text-body-secondary">9 mins</small>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!-- Card: Mouse Gaming -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://jashtechperu.com.pe/wp-content/uploads/2025/01/MOUSE-LOGITECH-GAMING-G502-HERO-RGB-.webp" class="card-img-top" alt="Mouse Gaming">
+                      <div class="card-body">
+                        <h5 class="card-title">Logitech G502</h5>
+                        <p class="card-text">Mouse ergonómico con sensor HERO de alta precisión.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">$59</span>
+                          <button type="button" class="btn btn-sm btn-outline-primary">Comprar</button>
                         </div>
-                        <small class="text-body-secondary">9 mins</small>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!-- Card: Teclado Mecánico (con descuento) -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://itusers.today/wp-content/uploads/2017/04/Review-HyperX-Alloy-teclado-para-videojuegosReview-HyperX-Alloy-teclado-para-videojuegos.jpg" class="card-img-top" alt="Teclado Mecánico">
+                      <div class="card-body">
+                        <h5 class="card-title">HyperX Alloy FPS</h5>
+                        <p class="card-text">Teclado mecánico compacto con retroiluminación RGB.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-muted text-decoration-line-through">$119</small>
+                            <span class="fw-bold ms-1">$99</span>
+                            <span class="badge bg-danger ms-2">-17%</span>
+                          </div>
+                          <button type="button" class="btn btn-sm btn-outline-primary">Comprar</button>
                         </div>
-                        <small class="text-body-secondary">9 mins</small>
                       </div>
                     </div>
                   </div>
-                </div>
-        
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!-- Card: Monitor Gaming -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://images.samsung.com/is/image/samsung/p6pim/pe/ls27cg552elxpe/gallery/pe-odyssey-g5-g55c-ls27cg552elxpe-539626583?$684_547_PNG$" class="card-img-top" alt="Monitor Gaming">
+                      <div class="card-body">
+                        <h5 class="card-title">Samsung Odyssey G5</h5>
+                        <p class="card-text">Monitor curvo 144Hz con resolución QHD.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">$329</span>
+                          <button type="button" class="btn btn-sm btn-outline-primary">Comprar</button>
                         </div>
-                        <small class="text-body-secondary">9 mins</small>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!-- Card: Procesador (con descuento) -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/137692928_01/w=800,h=800,fit=pad" class="card-img-top" alt="Procesador">
+                      <div class="card-body">
+                        <h5 class="card-title">AMD Ryzen 7 5800X</h5>
+                        <p class="card-text">Procesador de 8 núcleos y 16 hilos para multitarea intensiva.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <small class="text-muted text-decoration-line-through">$449</small>
+                            <span class="fw-bold ms-1">$399</span>
+                            <span class="badge bg-danger ms-2">-11%</span>
+                          </div>
+                          <button type="button" class="btn btn-sm btn-outline-primary">Comprar</button>
                         </div>
-                        <small class="text-body-secondary">9 mins</small>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <!-- Card: Auriculares Gaming -->
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="https://thegamingstore.pk/wp-content/uploads/2022/10/41ebd591-7988-4fd4-b1bd-88e2cf6bc4bd.a256f602686dc562220c073a00cf05f7-510x510.jpeg" class="card-img-top" alt="Auriculares Gaming">
+                      <div class="card-body">
+                        <h5 class="card-title">Corsair HS60</h5>
+                        <p class="card-text">Auriculares con sonido envolvente 7.1 y micrófono ajustable.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span class="fw-bold">$79</span>
+                          <button type="button" class="btn btn-sm btn-outline-primary">Comprar</button>
                         </div>
-                        <small class="text-body-secondary">9 mins</small>
                       </div>
                     </div>
                   </div>
-                </div>
-        
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
           </div>
-    </main>
+      </div>
+  </main>
 
     <!-- Footer -->
     <div class="container">
